@@ -20,12 +20,12 @@ export const navConfig = [
   {
     group: "Practice",
     items: [
-      { label: "Dentists", href: "/dentists", icon: UserRound },
-      { label: "Patients", href: "/patients", icon: Users },
-      { label: "Bookings", href: "/bookings", icon: CalendarDays },
+      { label: "Dentists", href: "/dashboard/dentists", icon: UserRound },
+      { label: "Patients", href: "/dashboard/patients", icon: Users },
+      { label: "Bookings", href: "/dashboard/bookings", icon: CalendarDays },
       {
         label: "Verification Queue",
-        href: "/verification",
+        href: "/dashboard/verification",
         icon: ShieldCheck,
         badge: 12,
       },
@@ -34,28 +34,37 @@ export const navConfig = [
   {
     group: "Finance",
     items: [
-      { label: "Payments & Escrow", href: "/payments", icon: Landmark },
-      { label: "Reports", href: "/reports", icon: BarChart3 },
+      {
+        label: "Payments & Escrow",
+        href: "/dashboard/payments",
+        icon: Landmark,
+      },
+      { label: "Reports", href: "/dashboard/reports", icon: BarChart3 },
     ],
   },
   {
     group: "Directory",
-    items: [{ label: "KOL Management", href: "/kol", icon: Star }],
+    items: [{ label: "KOL Management", href: "/dashboard/kol", icon: Star }],
   },
   {
     group: "Trust & Safety",
     items: [
       {
         label: "Anti-Collusion",
-        href: "/collusion",
+        href: "/dashboard/collusion",
         icon: ShieldAlert,
         badge: 7,
       },
-      { label: "SEO Review Pages", href: "/seo", icon: Globe, badge: 4 },
+      {
+        label: "SEO Review Pages",
+        href: "/dashboard/seo",
+        icon: Globe,
+        badge: 4,
+      },
     ],
   },
   {
     group: "System",
-    items: [{ label: "Settings", href: "/settings", icon: Settings }],
+    items: [{ label: "Settings", href: "/dashboard/settings", icon: Settings }],
   },
 ];

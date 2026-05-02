@@ -1,3 +1,5 @@
+import { DentistProfileData } from "@/types/types";
+
 export const STATS_DATA = [
   {
     label: "Active dentists",
@@ -204,4 +206,230 @@ export const DATA = [
   { date: "Apr 27", bookings: 385, revenue: 50000 },
   { date: "Apr 28", bookings: 420, revenue: 55000 },
   { date: "Apr 29", bookings: 312, revenue: 39000 },
+];
+
+export interface Dentist {
+  id: string;
+  name: string;
+  email: string;
+  idCode: string;
+  specialty: string;
+  location: string;
+  status: "Active" | "Pending" | "Suspended" | "Rejected";
+  rating: number;
+  reviews: number;
+  bookings: number | null;
+  joined: string;
+}
+
+export const MOCK_DENTISTS: Dentist[] = [
+  {
+    id: "DEN-001",
+    name: "Dr. Maya Patel",
+    email: "maya@clinicx.com",
+    idCode: "DEN-001",
+    specialty: "Orthodontics",
+    location: "San Francisco, CA",
+    status: "Active",
+    rating: 4.9,
+    reviews: 184,
+    bookings: 312,
+    joined: "2024-08-12",
+  },
+  {
+    id: "DEN-002",
+    name: "Dr. Brian Lee",
+    email: "blee@smilecare.io",
+    idCode: "DEN-002",
+    specialty: "Endodontics",
+    location: "New York, NY",
+    status: "Active",
+    rating: 4.8,
+    reviews: 142,
+    bookings: 268,
+    joined: "2024-09-03",
+  },
+  {
+    id: "DEN-003",
+    name: "Dr. Amelia Garcia",
+    email: "amelia@brightd.com",
+    idCode: "DEN-003",
+    specialty: "Pediatric",
+    location: "Austin, TX",
+    status: "Pending",
+    rating: 0,
+    reviews: 0,
+    bookings: null,
+    joined: "2026-04-22",
+  },
+  {
+    id: "DEN-004",
+    name: "Dr. Noah Kim",
+    email: "noah@northdent.com",
+    idCode: "DEN-004",
+    specialty: "Cosmetic",
+    location: "Seattle, WA",
+    status: "Active",
+    rating: 4.7,
+    reviews: 96,
+    bookings: 198,
+    joined: "2025-01-10",
+  },
+  {
+    id: "DEN-005",
+    name: "Dr. Priya Shah",
+    email: "priya@dentalp.co",
+    idCode: "DEN-005",
+    specialty: "Periodontics",
+    location: "Boston, MA",
+    status: "Suspended",
+    rating: 3.9,
+    reviews: 58,
+    bookings: 74,
+    joined: "2024-11-19",
+  },
+  {
+    id: "DEN-006",
+    name: "Dr. Liam O'Connor",
+    email: "liam@oaktree.dent",
+    idCode: "DEN-006",
+    specialty: "Oral Surgery",
+    location: "Chicago, IL",
+    status: "Active",
+    rating: 4.6,
+    reviews: 211,
+    bookings: 402,
+    joined: "2024-06-04",
+  },
+  {
+    id: "DEN-007",
+    name: "Dr. Sara Chen",
+    email: "sara@chendent.com",
+    idCode: "DEN-007",
+    specialty: "General",
+    location: "Los Angeles, CA",
+    status: "Pending",
+    rating: 0,
+    reviews: 0,
+    bookings: null,
+    joined: "2026-04-25",
+  },
+  {
+    id: "DEN-008",
+    name: "Dr. Marcus Hall",
+    email: "marcus@hall.dental",
+    idCode: "DEN-008",
+    specialty: "Prosthodontics",
+    location: "Denver, CO",
+    status: "Active",
+    rating: 4.5,
+    reviews: 73,
+    bookings: 124,
+    joined: "2025-03-15",
+  },
+];
+
+export const dentistData: DentistProfileData = {
+  name: "Dr. Maya Patel",
+  specialty: "Orthodontics",
+  rating: 4.9,
+  reviews: 164,
+  languages: ["English", "Spanish"],
+  email: "maya@clinic.com",
+  phone: "+1 415 555 0192",
+  location: "San Francisco, CA",
+  experience: "11y experience",
+  stats: {
+    totalBookings: "312",
+    revenue: "$48,200",
+    cancellationRate: "3.2%",
+    estimateAccuracy: "94%",
+    avgResponseTime: "1h12m",
+  },
+  profileInfo: {
+    fullName: "Dr. Maya Patel",
+    license: "CA-DDS-44192",
+    specialty: "Orthodontics",
+    yearsOfPractice: "11 years",
+    clinic: "CliniX Smile Center",
+    address: "88 Market St, San Francisco, CA",
+    bio: "Dr. Patel specializes in invisible aligners and pediatric orthodontics. Trained at UCSF, certified in Invisalign Diamond, and lingual braces. With 11 years of experience she has completed over 800 smile transformations and welcomes international patients.",
+  },
+  procedures: [
+    {
+      procedure: "Single Implant",
+      category: "Implants",
+      price: "$1,200",
+      bookings: "56",
+    },
+    {
+      procedure: "Veneer (per tooth)",
+      category: "Cosmetic",
+      price: "$380",
+      bookings: "88",
+    },
+    {
+      procedure: "Crown",
+      category: "Restorative",
+      price: "$750",
+      bookings: "72",
+    },
+    {
+      procedure: "Full-arch restoration",
+      category: "Implants",
+      price: "$1,200",
+      bookings: "28",
+    },
+    {
+      procedure: "Invisalign fitting",
+      category: "Orthodontics",
+      price: "$480",
+      bookings: "68",
+    },
+  ],
+  education: {
+    year: "2013",
+    degree: "Doctor of Dental Surgery (DDS)",
+    institution: "UCSF School of Dentistry",
+  },
+  verification: {
+    score: "100%",
+    title: "All 3 phases approved",
+    subtitle: "By Jordan Smith, Apr 12, 2025",
+    phaseBreakdown: [
+      {
+        name: "Phase 1 - Identity",
+        percent: 50,
+        date: "approved Apr 10, 2025",
+        status: "Approved",
+      },
+      {
+        name: "Phase 2 - Operations",
+        percent: 40,
+        date: "approved Apr 12, 2025",
+        status: "Approved",
+      },
+      {
+        name: "Phase 3 - Clinical Depth",
+        percent: 50,
+        date: "approved Apr 13, 2025",
+        status: "Approved",
+      },
+    ],
+  },
+  performance: [
+    { label: "Show-up rate", value: 96.8, color: "bg-slate-900" },
+    { label: "5-star reviews", value: 76, color: "bg-amber-500" },
+    { label: "Repeat patients", value: 62, color: "bg-amber-700" },
+    { label: "Estimate accuracy", value: 94, color: "bg-emerald-500" },
+  ],
+};
+
+export const profileTabs = [
+  "Overview",
+  "Pricing & Protocols",
+  "Verification Data",
+  "Reviews",
+  "Patient Results",
+  "Materials",
 ];

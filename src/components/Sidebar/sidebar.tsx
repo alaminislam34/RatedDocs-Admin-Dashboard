@@ -45,7 +45,7 @@ export function Sidebar() {
           <div className="flex items-center gap-3">
             <div className="relative">
               <Avatar className="h-10 w-10 border border-emerald-500/50">
-                <AvatarImage src="/jordan-avatar.jpg" />
+                <AvatarImage src="/avatar.webp" />
                 <AvatarFallback className="bg-slate-800 text-white text-xs">
                   JS
                 </AvatarFallback>

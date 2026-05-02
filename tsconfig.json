@@ -28,7 +28,12 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    "**/*.mts",
+    "**/*.cts",
+    "src/app/components/Dashboard/navbar/Navbar.tsx",
+    "src/app/%28dashboard%29/layout.tsx",
+    "src/app/components/Dashboard/revenue-card.tsx",
+    "src/app/components/Dashboard/notification-dropdown.tsx"
   ],
   "exclude": ["node_modules"]
 }
