@@ -41,7 +41,7 @@ export function NotificationGroup({
           >
             <Icon className="h-4 w-4" />
           </span>
-          <h3 className="text-sm font-semibold text-slate-900">
+          <h3 className="text-sm font-semibold text-[#101828]">
             {group.title}
           </h3>
         </div>
@@ -50,14 +50,14 @@ export function NotificationGroup({
           <button
             type="button"
             onClick={onEnableAll}
-            className="hover:text-slate-900"
+            className="hover:text-[#101828]"
           >
             Enable all
           </button>
           <button
             type="button"
             onClick={onDisableAll}
-            className="hover:text-slate-900"
+            className="hover:text-[#101828]"
           >
             Disable all
           </button>

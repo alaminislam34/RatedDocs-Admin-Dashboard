@@ -19,14 +19,14 @@ export function MaterialRow({
   return (
     <tr className="border-b border-slate-100 hover:bg-slate-50 transition-colors">
       <td className="px-6 py-4">
-        <p className="text-sm font-semibold text-slate-900">{category}</p>
+        <p className="text-sm font-semibold text-[#101828]">{category}</p>
       </td>
       <td className="px-6 py-4">
         <p className="text-sm text-slate-600">{brand}</p>
       </td>
       <td className="px-6 py-4">
         {hasInvoice ? (
-          <button className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors">
+          <button className="inline-flex items-center gap-2 text-slate-600 hover:text-[#101828] transition-colors">
             <FileText className="h-4 w-4" />
             <span className="text-sm">View</span>
           </button>

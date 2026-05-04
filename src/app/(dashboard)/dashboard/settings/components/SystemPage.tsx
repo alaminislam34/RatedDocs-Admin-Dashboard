@@ -17,7 +17,7 @@ export function SystemPage() {
     <div className="min-h-screen bg-[#f7f8fb] px-4 py-5 md:px-6">
       <div className="mx-auto max-w-360 space-y-5">
         <header>
-          <h1 className="text-2xl font-semibold text-slate-900">My Profile</h1>
+          <h1 className="text-2xl font-semibold text-[#101828]">My Profile</h1>
           <p className="text-sm text-slate-500">System / My Profile</p>
         </header>
 

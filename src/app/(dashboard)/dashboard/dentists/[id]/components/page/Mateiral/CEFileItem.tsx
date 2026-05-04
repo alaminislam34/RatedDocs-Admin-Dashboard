@@ -21,7 +21,7 @@ export function CEFileItem({
       <div className="flex items-center gap-3">
         <Bookmark className="h-5 w-5 text-slate-400 shrink-0" />
         <div>
-          <p className="text-sm font-semibold text-slate-900">{filename}</p>
+          <p className="text-sm font-semibold text-[#101828]">{filename}</p>
           <p className="text-xs text-slate-500">
             {size} · {date}
           </p>

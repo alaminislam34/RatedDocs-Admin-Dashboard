@@ -42,7 +42,7 @@ export function PasswordForm() {
       className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
     >
       <div className="border-b border-slate-100 px-6 py-4">
-        <h3 className="text-sm font-semibold text-slate-900">
+        <h3 className="text-sm font-semibold text-[#101828]">
           Change password
         </h3>
       </div>
@@ -141,7 +141,7 @@ export function PasswordForm() {
         <div className="space-y-4 pt-2">
           <Button
             type="submit"
-            className="bg-slate-900 px-5 text-white hover:bg-slate-800"
+            className="bg-[#101828] px-5 text-white hover:bg-slate-800"
           >
             Update password
           </Button>

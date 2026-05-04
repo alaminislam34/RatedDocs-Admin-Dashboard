@@ -13,14 +13,14 @@ export function RatingDistribution({
 }: RatingDistributionProps) {
   return (
     <div className="flex items-center gap-2">
-      <span className="text-sm font-semibold text-slate-900 w-8">{stars}</span>
+      <span className="text-sm font-semibold text-[#101828] w-8">{stars}</span>
       <div className="h-2 flex-1 rounded-full bg-slate-100 overflow-hidden">
         <div
           className={`h-full ${color}`}
           style={{ width: `${percentage}%` }}
         />
       </div>
-      <span className="text-sm font-semibold text-slate-900 w-12 text-right">
+      <span className="text-sm font-semibold text-[#101828] w-12 text-right">
         {percentage}%
       </span>
     </div>

@@ -9,7 +9,7 @@ type CategoryRatingProps = {
 export function CategoryRating({
   category,
   rating,
-  color = "bg-slate-900",
+  color = "bg-[#101828]",
 }: CategoryRatingProps) {
   return (
     <div className="flex items-center gap-3">
@@ -20,7 +20,7 @@ export function CategoryRating({
           style={{ width: `${(rating / 5) * 100}%` }}
         />
       </div>
-      <span className="text-sm font-semibold text-slate-900 w-8">
+      <span className="text-sm font-semibold text-[#101828] w-8">
         {rating.toFixed(1)}
       </span>
     </div>

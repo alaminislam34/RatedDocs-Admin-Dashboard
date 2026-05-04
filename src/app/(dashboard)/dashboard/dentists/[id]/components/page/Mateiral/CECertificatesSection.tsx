@@ -19,7 +19,7 @@ export function CECertificatesSection({ files }: CECertificatesSectionProps) {
     <div className="space-y-4">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <h3 className="text-sm font-bold text-slate-900">
+        <h3 className="text-sm font-bold text-[#101828]">
           CE certificates (per procedure)
         </h3>
         <button className="inline-flex items-center gap-2 rounded px-3 py-2 text-sm text-slate-600 hover:bg-slate-50 transition-colors">

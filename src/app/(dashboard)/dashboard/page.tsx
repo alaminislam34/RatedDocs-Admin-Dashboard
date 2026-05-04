@@ -34,12 +34,12 @@ export default function DashboardPage() {
 
         {/* Re-using the Quick Actions layout from the design */}
         <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm h-full">
-          <h3 className="font-bold text-slate-900 mb-6">Quick actions</h3>
+          <h3 className="font-bold text-[#101828] mb-6">Quick actions</h3>
           <button className="group w-full flex flex-col items-center justify-center gap-4 p-10 rounded-xl border-2 border-dashed border-slate-200 text-slate-500 hover:border-[#D99A29] hover:bg-amber-50/30 transition-all duration-200">
             <div className="p-3 bg-slate-50 rounded-xl group-hover:bg-white group-hover:shadow-sm transition-all">
               <UserPlus className="h-6 w-6 text-slate-400 group-hover:text-[#D99A29]" />
             </div>
-            <span className="text-sm font-bold group-hover:text-slate-900">
+            <span className="text-sm font-bold group-hover:text-[#101828]">
               Add Dentist
             </span>
           </button>

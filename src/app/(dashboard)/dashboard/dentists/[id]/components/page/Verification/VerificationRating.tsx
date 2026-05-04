@@ -19,7 +19,7 @@ export function VerificationRating({
         {/* Circular Score */}
         <div className="flex flex-col items-center gap-2">
           <div className="relative h-24 w-24 rounded-full border-4 border-emerald-500 bg-emerald-50 flex items-center justify-center">
-            <span className="text-3xl font-bold text-slate-900">100</span>
+            <span className="text-3xl font-bold text-[#101828]">100</span>
           </div>
           <span className="text-[10px] font-bold text-emerald-600">
             Fully verified
@@ -28,7 +28,7 @@ export function VerificationRating({
 
         {/* Score Info */}
         <div className="flex-1 py-2">
-          <h3 className="text-sm font-bold text-slate-900">{score}</h3>
+          <h3 className="text-sm font-bold text-[#101828]">{score}</h3>
           <p className="text-sm text-slate-600">{title}</p>
           <p className="text-xs text-emerald-600 font-medium">{subtitle}</p>
         </div>

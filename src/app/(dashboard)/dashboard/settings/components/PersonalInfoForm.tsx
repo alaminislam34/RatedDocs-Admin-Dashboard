@@ -37,12 +37,12 @@ export function PersonalInfoForm({
       className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
     >
       <div className="flex items-center justify-between gap-4 border-b border-slate-100 px-6 py-4">
-        <h3 className="text-sm font-semibold text-slate-900">
+        <h3 className="text-sm font-semibold text-[#101828]">
           Personal details
         </h3>
         <Button
           type="submit"
-          className="bg-slate-900 text-white hover:bg-slate-800"
+          className="bg-[#101828] text-white hover:bg-slate-800"
         >
           Save changes
         </Button>

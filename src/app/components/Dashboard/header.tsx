@@ -11,7 +11,7 @@ export function DashboardHeader({ name, date }: DashboardHeaderProps) {
     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
       {/* Greeting Section */}
       <div>
-        <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+        <h1 className="text-2xl font-bold tracking-tight text-[#101828] sm:text-3xl">
           Welcome back, {name}
         </h1>
         <p className="text-sm font-medium text-slate-500 mt-1">

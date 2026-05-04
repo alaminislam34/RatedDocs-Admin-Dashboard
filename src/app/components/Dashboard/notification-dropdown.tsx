@@ -22,7 +22,7 @@ export function NotificationDropdown() {
         <Button
           variant="ghost"
           size="icon"
-          className="relative text-slate-500 hover:text-slate-900"
+          className="relative text-slate-500 hover:text-[#101828]"
         >
           <Bell className="h-5 w-5" />
           {unreadCount > 0 && (
@@ -50,7 +50,7 @@ export function NotificationDropdown() {
                     className={cn(
                       "text-sm font-bold leading-tight",
                       !notification.isRead
-                        ? "text-slate-900"
+                        ? "text-[#101828]"
                         : "text-slate-500",
                     )}
                   >

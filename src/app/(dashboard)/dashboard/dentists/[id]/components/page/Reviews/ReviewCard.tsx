@@ -27,14 +27,14 @@ export function ReviewCard({
       {/* Header: Author + Date */}
       <div className="flex items-start justify-between mb-3">
         <div className="flex items-center gap-3">
-          <Avatar className="h-10 w-10 bg-slate-900 text-white">
+          <Avatar className="h-10 w-10 bg-[#101828] text-white">
             <AvatarFallback className="text-xs font-bold">
               {initials}
             </AvatarFallback>
           </Avatar>
           <div>
             <div className="flex items-center gap-2">
-              <p className="text-sm font-semibold text-slate-900">{author}</p>
+              <p className="text-sm font-semibold text-[#101828]">{author}</p>
               {isVerified && (
                 <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-blue-50 text-blue-600 text-[10px] font-bold">
                   ✓ Verified

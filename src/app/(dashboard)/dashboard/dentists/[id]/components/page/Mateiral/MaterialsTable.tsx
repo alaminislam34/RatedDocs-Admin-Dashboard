@@ -17,7 +17,7 @@ export function MaterialsTable({ materials }: MaterialsTableProps) {
   return (
     <div className="rounded-lg border border-slate-200 bg-white overflow-hidden">
       {/* Table Header */}
-      <div className="bg-slate-900 px-6 py-4">
+      <div className="bg-[#101828] px-6 py-4">
         <div className="grid grid-cols-4 gap-0">
           <p className="text-sm font-bold text-white">Category</p>
           <p className="text-sm font-bold text-white">Brand / System</p>

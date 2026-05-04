@@ -25,7 +25,7 @@ export function RevenueChart() {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4">
         <div>
-          <h3 className="text-lg font-bold text-slate-900 leading-tight">
+          <h3 className="text-lg font-bold text-[#101828] leading-tight">
             Bookings & Revenue
           </h3>
           <p className="text-sm font-medium text-slate-400 mt-0.5">
@@ -41,7 +41,7 @@ export function RevenueChart() {
               className={cn(
                 "px-4 py-1.5 text-xs font-bold capitalize transition-all rounded-md",
                 view === type
-                  ? "bg-white text-slate-900 shadow-sm ring-1 ring-slate-200"
+                  ? "bg-white text-[#101828] shadow-sm ring-1 ring-slate-200"
                   : "text-slate-500 hover:text-slate-700",
               )}
             >
@@ -197,7 +197,7 @@ function CustomTooltip({ active, payload, label }: any) {
                   {entry.name}
                 </span>
               </div>
-              <span className="text-xs font-bold text-slate-900">
+              <span className="text-xs font-bold text-[#101828]">
                 {entry.name === "revenue"
                   ? `$${entry.value.toLocaleString()}`
                   : entry.value}

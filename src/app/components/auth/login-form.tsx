@@ -40,7 +40,7 @@ export function LoginForm() {
           <Activity className="h-6 w-6 text-black" strokeWidth={2.5} />
         </div>
         <div className="flex flex-col">
-          <span className="text-lg font-bold leading-tight text-slate-900">
+          <span className="text-lg font-bold leading-tight text-[#101828]">
             RatedDocs
           </span>
           <span className="text-sm font-medium leading-tight text-slate-400">
@@ -52,7 +52,7 @@ export function LoginForm() {
       {/* Main Form Area */}
       <div className="w-full max-w-md flex-1 flex flex-col justify-center pb-20">
         <div className="mb-8 flex flex-col gap-2">
-          <h1 className="text-3xl font-bold tracking-tight text-slate-900">
+          <h1 className="text-3xl font-bold tracking-tight text-[#101828]">
             Welcome back
           </h1>
           <p className="text-sm text-slate-500">
@@ -65,7 +65,7 @@ export function LoginForm() {
           <div className="space-y-2">
             <label
               htmlFor="email"
-              className="text-sm text-slate-900 font-semibold leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              className="text-sm text-[#101828] font-semibold leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
             >
               Work email
             </label>
@@ -92,13 +92,13 @@ export function LoginForm() {
             <div className="flex items-center justify-between">
               <label
                 htmlFor="password"
-                className="text-sm text-slate-900 font-semibold leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                className="text-sm text-[#101828] font-semibold leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
               >
                 Password
               </label>
               <a
                 href="#"
-                className="text-sm font-medium text-slate-600 hover:text-slate-900"
+                className="text-sm font-medium text-slate-600 hover:text-[#101828]"
               >
                 Forgot password?
               </a>

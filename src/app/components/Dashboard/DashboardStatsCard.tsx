@@ -51,7 +51,7 @@ export function DashboardStatsCard({
       </div>
       <div className="space-y-1">
         <p className="text-sm font-medium text-slate-500">{label}</p>
-        <h3 className="text-3xl font-bold text-slate-900 tracking-tight">
+        <h3 className="text-3xl font-bold text-[#101828] tracking-tight">
           {value}
         </h3>
       </div>

@@ -418,18 +418,101 @@ export const dentistData: DentistProfileData = {
     ],
   },
   performance: [
-    { label: "Show-up rate", value: 96.8, color: "bg-slate-900" },
+    { label: "Show-up rate", value: 96.8, color: "bg-[#101828]" },
     { label: "5-star reviews", value: 76, color: "bg-amber-500" },
     { label: "Repeat patients", value: 62, color: "bg-amber-700" },
     { label: "Estimate accuracy", value: 94, color: "bg-emerald-500" },
   ],
 };
 
-export const profileTabs = [
-  "Overview",
-  "Pricing & Protocols",
-  "Verification Data",
-  "Reviews",
-  "Patient Results",
-  "Materials",
+export type BookingStatus =
+  | "Confirmed"
+  | "Pending"
+  | "Cancelled"
+  | "Completed"
+  | "No-show";
+
+export interface Booking {
+  id: string;
+  dentistName: string;
+  procedure: string;
+  date: string;
+  time: string;
+  status: BookingStatus;
+  amount: string;
+}
+
+export const MOCK_BOOKINGS: Booking[] = [
+  {
+    id: "B-2041",
+    dentistName: "Dr. Maya Patel",
+    procedure: "Cleaning & Checkup",
+    date: "2026-04-30",
+    time: "10:00 AM",
+    status: "Confirmed",
+    amount: "$120",
+  },
+  {
+    id: "B-2042",
+    dentistName: "Dr. Brian Lee",
+    procedure: "Root Canal Therapy",
+    date: "2026-04-30",
+    time: "11:30 AM",
+    status: "Confirmed",
+    amount: "$980",
+  },
+  {
+    id: "B-2043",
+    dentistName: "Dr. Noah Kim",
+    procedure: "Teeth Whitening",
+    date: "2026-04-30",
+    time: "2:00 PM",
+    status: "Pending",
+    amount: "$350",
+  },
+  {
+    id: "B-2044",
+    dentistName: "Dr. Maya Patel",
+    procedure: "Braces Consultation",
+    date: "2026-05-01",
+    time: "9:30 AM",
+    status: "Confirmed",
+    amount: "$90",
+  },
+  {
+    id: "B-2045",
+    dentistName: "Dr. Priya Shah",
+    procedure: "Gum Treatment",
+    date: "2026-05-01",
+    time: "1:00 PM",
+    status: "Cancelled",
+    amount: "$0",
+  },
+  {
+    id: "B-2046",
+    dentistName: "Dr. Liam O'Connor",
+    procedure: "Extraction",
+    date: "2026-05-02",
+    time: "3:30 PM",
+    status: "Completed",
+    amount: "$240",
+  },
+  {
+    id: "B-2047",
+    dentistName: "Dr. Marcus Hall",
+    procedure: "Crown Fitting",
+    date: "2026-05-02",
+    time: "4:30 PM",
+    status: "No-show",
+    amount: "$0",
+  },
+  {
+    id: "B-2048",
+    dentistName: "Dr. Brian Lee",
+    procedure: "Follow-up",
+    date: "2026-05-03",
+    time: "10:30 AM",
+    status: "Confirmed",
+    amount: "$60",
+  },
 ];

@@ -49,7 +49,7 @@ export function SidebarItem({
       </div>
 
       {badge && (
-        <span className="bg-[#D99A29] text-slate-900 text-[10px] font-bold px-2 py-0.5 rounded-full">
+        <span className="bg-[#D99A29] text-[#101828] text-[10px] font-bold px-2 py-0.5 rounded-full">
           {badge}
         </span>
       )}

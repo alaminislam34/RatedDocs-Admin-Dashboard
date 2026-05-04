@@ -18,7 +18,7 @@ export function PriceTable({ procedures }: PriceTableProps) {
     <div className="overflow-hidden rounded-lg border border-slate-200 bg-white">
       <table className="w-full min-w-162.5">
         <thead>
-          <tr className="bg-slate-900 text-white text-left text-sm">
+          <tr className="bg-[#101828] text-white text-left text-sm">
             <th className="px-6 py-3">Procedure</th>
             <th className="px-6 py-3">Price (USD)</th>
             <th className="px-6 py-3">Booking type</th>

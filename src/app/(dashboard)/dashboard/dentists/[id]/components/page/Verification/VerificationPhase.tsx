@@ -28,7 +28,7 @@ export function VerificationPhase({
       <div className="flex items-center gap-2">
         <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0" />
         <div className="flex-1">
-          <p className="text-sm font-bold text-slate-900">{name}</p>
+          <p className="text-sm font-bold text-[#101828]">{name}</p>
           <p className="text-xs text-slate-400">{date}</p>
         </div>
         <span className="text-sm font-bold text-emerald-600">

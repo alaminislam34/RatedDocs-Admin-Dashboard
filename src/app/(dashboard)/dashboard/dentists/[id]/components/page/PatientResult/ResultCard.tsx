@@ -26,7 +26,7 @@ export function ResultCard({ title, location, date }: ResultCardProps) {
       </div>
       {/* Content Footer */}
       <div className="p-4">
-        <h3 className="text-sm font-bold text-slate-900">{title}</h3>
+        <h3 className="text-sm font-bold text-[#101828]">{title}</h3>
         <p className="text-xs text-slate-500 mt-1">
           {location} · {date}
         </p>

@@ -49,7 +49,7 @@ export function NotificationSection() {
       ))}
 
       <div className="flex justify-end">
-        <Button className="rounded-lg bg-slate-900 px-4 text-white hover:bg-slate-800">
+        <Button className="rounded-lg bg-[#101828] px-4 text-white hover:bg-slate-800">
           Save all preferences
         </Button>
       </div>

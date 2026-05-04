@@ -15,13 +15,13 @@ export function ProfileHeader() {
               JS
             </AvatarFallback>
           </Avatar>
-          <div className="absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-slate-900 text-white">
+          <div className="absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-[#101828] text-white">
             <Camera className="h-3 w-3" />
           </div>
         </div>
 
         <div className="min-w-0 flex-1">
-          <h2 className="text-xl font-semibold text-slate-900">
+          <h2 className="text-xl font-semibold text-[#101828]">
             {profileMeta.name}
           </h2>
           <p className="text-sm text-slate-500">{profileMeta.role}</p>

@@ -35,7 +35,7 @@ export function SystemSidebar({ activeSection, onChange }: SystemSidebarProps) {
               className={cn(
                 "flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
                 active
-                  ? "bg-blue-50 text-slate-900"
+                  ? "bg-blue-50 text-[#101828]"
                   : "text-slate-500 hover:bg-slate-50",
               )}
             >

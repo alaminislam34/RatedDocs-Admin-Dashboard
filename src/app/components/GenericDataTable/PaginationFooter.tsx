@@ -1,6 +1,3 @@
-"use client";
-
-import * as React from "react";
 import { Button } from "@/components/ui/button";
 
 export default function PaginationFooter({
@@ -23,6 +20,7 @@ export default function PaginationFooter({
         <Button variant="outline" size="sm">
           ‹
         </Button>
+        <p>{showingFrom}</p>
         <Button variant="outline" size="sm">
           ›
         </Button>

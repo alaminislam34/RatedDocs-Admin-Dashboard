@@ -21,7 +21,7 @@ export function ReviewsSummary({
     <div className="rounded-xl border border-slate-200 bg-white p-6">
       {/* Overall Rating */}
       <div className="text-center mb-6 pb-6 border-b border-slate-100">
-        <p className="text-5xl font-bold text-slate-900">
+        <p className="text-5xl font-bold text-[#101828]">
           {overallRating.toFixed(1)}
         </p>
         <div className="flex justify-center gap-1 my-2">

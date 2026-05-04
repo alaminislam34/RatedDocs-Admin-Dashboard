@@ -13,7 +13,7 @@ export function VerificationQueue() {
   return (
     <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
       <div className="p-6 border-b border-slate-100 flex justify-between items-center">
-        <h3 className="font-bold text-slate-900">Verification Queue</h3>
+        <h3 className="font-bold text-[#101828]">Verification Queue</h3>
       </div>
       <div className="divide-y divide-slate-50">
         {VERIFICATION_QUEUE.map((item) => (
@@ -28,7 +28,7 @@ export function VerificationQueue() {
                 </AvatarFallback>
               </Avatar>
               <div>
-                <p className="text-sm font-bold text-slate-900 leading-none mb-1">
+                <p className="text-sm font-bold text-[#101828] leading-none mb-1">
                   {item.name}
                 </p>
                 <p className="text-xs text-slate-500">
